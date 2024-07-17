@@ -8,14 +8,16 @@
   padding: 30px 0px;
   @include abstracts.breakpoint(lg) {
     padding: 20px 0px;
+    box-shadow: 0px 20px 60px 10px var(--header-shadow-color);
   }
   @include abstracts.breakpoint(sm) {
     padding: 16px 0px;
   }
 }
 .top-bar {
+  position: relative;
   @extend %flex-items-center;
-  @include abstracts.breakpoint(sm) {
+  @include abstracts.breakpoint(md) {
     justify-content: space-between;
   }
   &__more {
@@ -26,9 +28,9 @@
   }
 }
 .navbar {
-  margin-left: 144px;
+  margin-left: 130px;
   @include abstracts.breakpoint(xl) {
-    margin-left: 50px;
+    margin-left: 28px;
   }
   @include abstracts.breakpoint(lg) {
     display: none;
@@ -37,10 +39,18 @@
     @extend %flex-items-center;
     gap: 30px;
   }
+  &__item {
+    &:hover > .dropdown {
+      display: block;
+    }
+  }
   &__link {
+    @extend %flex-items-center;
+    gap: 6px;
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 2.2rem;
+    height: 50px;
   }
   &__arrow {
     margin-top: 3px;
@@ -51,8 +61,8 @@
   margin-left: auto;
   @extend %flex-items-center;
   gap: 20px;
-  
-  @include abstracts.breakpoint(sm) {
+
+  @include abstracts.breakpoint(md) {
     margin-left: 0;
   }
   &__group {
