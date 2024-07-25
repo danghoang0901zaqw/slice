@@ -37,6 +37,31 @@
       load("#header", "./templates/header.html");
     </script>
     <div class="container">
+      <!-- Slideshow -->
+      <div class="slideshow">
+        <div class="slideshow__inner">
+          <div class="slideshow__item">
+            <a href="#!" class="slideshow__link">
+              <picture>
+                <source
+                  media="(max-width:767.98px)"
+                  srcset="./assets/img/slideshow/item-1-md.png"
+                />
+                <img
+                  src="./assets/img/slideshow/item-1.png"
+                  alt=""
+                  class="slideshow__img"
+                />
+              </picture>
+            </a>
+          </div>
+        </div>
+        <div class="slideshow__page">
+          <div class="slideshow__num">1</div>
+          <div class="slideshow__slider"></div>
+          <div class="slideshow__num">5</div>
+        </div>
+      </div>
       <h1>Hello</h1>
       <footer id="footer"></footer>
       <script>
