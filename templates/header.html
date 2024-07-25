@@ -1,43 +1,49 @@
 <div class="container">
   <div class="top-bar">
     <!-- More -->
-    <div
+    <button
       class="top-bar__more d-none d-lg-block js-toggle"
       toggle-target="#navbar"
     >
       <img
         src="./assets/icons/more.svg"
         alt=""
-        class="top-bar__more-icon icon"
+        class="icon top-bar__more-icon"
       />
-    </div>
+    </button>
 
     <!-- Logo -->
-    <a href="./" class="logo">
-      <img src="./assets/icons/logo.svg" alt="grocerymart" class="logo__img" />
-      <h1 class="logo__title">grocerymart</h1>
+    <a href="./" class="logo top-bar__logo">
+      <img
+        src="./assets/icons/logo.svg"
+        alt="grocerymart"
+        class="logo__img top-bar__logo-img"
+      />
+      <h1 class="logo__title top-bar__logo-title">grocerymart</h1>
     </a>
+
     <!-- Navbar -->
-    <nav id="navbar" class="navbar show">
+    <nav id="navbar" class="navbar hide">
       <button class="navbar__close-btn js-toggle" toggle-target="#navbar">
-        <img src="./assets/icons/arrow-left.svg" alt="" class="icon" />
+        <img class="icon" src="./assets/icons/arrow-left.svg" alt="" />
       </button>
 
-      <a href="" class="nav-btn d-none d-md-flex">
-        <img src="./assets/icons/buy.svg" alt="" class="icon nav-btn__icon" />
-        <span class="nav-btn__title">Card</span>
+      <a href="./checkout.html" class="nav-btn d-none d-md-flex">
+        <img src="./assets/icons/buy.svg" alt="" class="nav-btn__icon icon" />
+        <span class="nav-btn__title">Cart</span>
         <span class="nav-btn__qnt">3</span>
       </a>
-      <a href="" class="nav-btn d-none d-md-flex">
-        <img src="./assets/icons/heart.svg" alt="" class="icon nav-btn__icon" />
+
+      <a href="#!" class="nav-btn d-none d-md-flex">
+        <img src="./assets/icons/heart.svg" alt="" class="nav-btn__icon icon" />
         <span class="nav-btn__title">Favorite</span>
         <span class="nav-btn__qnt">3</span>
       </a>
 
       <ul class="navbar__list js-dropdown-list">
         <li class="navbar__item">
-          <a href="#!" class="navbar__link"
-            >Departments
+          <a href="#!" class="navbar__link">
+            Departments
             <img
               src="./assets/icons/arrow-down.svg"
               alt=""
@@ -3935,8 +3941,8 @@
           </div>
         </li>
         <li class="navbar__item">
-          <a href="#!" class="navbar__link"
-            >Grocery
+          <a href="#!" class="navbar__link">
+            Grocery
             <img
               src="./assets/icons/arrow-down.svg"
               alt=""
@@ -4347,8 +4353,8 @@
           </div>
         </li>
         <li class="navbar__item">
-          <a href="#!" class="navbar__link"
-            >Beauty
+          <a href="#!" class="navbar__link">
+            Beauty
             <img
               src="./assets/icons/arrow-down.svg"
               alt=""

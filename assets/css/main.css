@@ -1399,12 +1399,15 @@ select {
     height: calc(100% - 124px);
   }
 }
-.navbar__item:hover > .dropdown {
-  display: none;
+.navbar__item:hover .dropdown {
+  display: block;
 }
 @media (max-width: 991.98px) {
   .navbar__item {
     width: 100%;
+  }
+  .navbar__item:hover .dropdown {
+    display: none;
   }
   .navbar__item--active > .dropdown {
     display: block !important;
